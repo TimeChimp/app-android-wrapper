@@ -17,12 +17,12 @@
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
+    applicationId: 'com.timechimp',
+    hostName: 'alpha.timechimp.app', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
+    name: 'TimeChimp', // The name shown on the Android Launcher.
+    themeColor: '#fff', // The color used for the status bar.
+    backgroundColor: '#fff', // The color used for the splash screen background.
     enableNotifications: false // Set to true to enable notification delegation
 ]
 
@@ -32,7 +32,7 @@ android {
         applicationId twaManifest.applicationId
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 3
+        versionCode 6
         versionName "1.1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
